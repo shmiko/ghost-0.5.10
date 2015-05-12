@@ -50,13 +50,9 @@ config = {
         // ```
 
         database: {
-            client: 'pg',
+            client: 'sqlite3',
             connection: {
-                host     : '127.0.0.1',
-                user     : 'pjones',
-                password : '',
-                database : 'ghost',
-                charset  : 'utf8'
+                filename: path.join(__dirname, '/content/data/ghost-dev.db')
             },
             debug: false
         },
